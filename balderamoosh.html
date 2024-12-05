@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <style>
+            img {
+                display: none;
+            }
+        </style>
+    <button id="button">click me</button>
+        <img id="img" src="https://i.ibb.co/ftszfMQ/balde.jpg">
+        <script>
+            const img = document.getElementById('img');
+const button =document.getElementById('button');
+
+
+button.addEventListener("click", event => {
+    if(img.style.display === "none")
+    {
+        img.style.display = "block";
+    }
+    else
+    {
+        img.style.display = "none";
+    }
+})
+        </script>
+    </body>
+</html>
