@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Enlarge on Hover</title>
+    <style>
+        .Una {
+            background-color: #92e515;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px;
+        }
+        p[id="1st"] {
+            color: #000000;
+        }
+        .title-panel { 
+            background-color: #92e515;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px;
+        }
+        body {
+            background-color: rgb(63, 199, 63);
+        }
+        .image-container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease;
+            padding-left: 20px;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.5); 
+        }
+    </style>
+</head>
+<body>
+    <div class="title-panel"> 
+        <h1>Balderamos Simple Magazine</h1> 
+        <p>Author:Euven D. Dalin</p> 
+    </div>
+    <div class="image-container">
+        <img src="image/balderamos.jpg" alt="Sample Image">
+    </div>
+    <div class="Una">
+    <p id="1st">So this is Balderamos, he is 16 yearse old and studying ict
+        in Christian Eclesiastical School. He is a Bussines man, One of he's Bussiness is scamming people.
+        So One of he's Classmate Help me to Write this article about him.
+        He's victim said: They plan to buy a Game on Steam, So they pay for 
+        the game, But the game sadly dont work. So they Request a refund. 
+        Balderamos didn't give the refund to he's victim(classmate).
+    </p>
+    </div>
+
+</body>
+</html>
