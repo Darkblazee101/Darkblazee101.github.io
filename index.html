@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>
+    <head> 
+        <title> Page ni balderamosh </title>
     </head>
     <body>
         <style>
-            img {
-                display: none;
+            body {
+                background-color: #69f16b;
+            }
+            .form {
+                padding: 200px 0;
+            }
+            .form > div {
+                border: 3px ;
+                background-color:white;
+                padding-top:4px;
+                width: 10cm;
+                height: 6.5cm;
+                backdrop-filter: blur(8px);
+            }
+            button[type="button"]{
+                background-color: #33ed35;
+                color: white;
+            }
+            p {
+                font-family: Garamond;
             }
         </style>
-    <button id="button">click me</button>
-        <a href="https://www.google.com/search?client=ms-android-transsion&sca_esv=34e05643fe6f2863&sxsrf=ADLYWIKIVA80ND9FljAag6mZ8bxL9qRrSA:1733449077197&q=dildo&udm=2&fbs=AEQNm0APBXNJdQ94oazsEfpu3LqlbqegNH2YsmAWe7MutqdHysUUpVUKd5h-wjCWtqOAk60vQWDkdyW798fM0ZAfP4yz3KL-2eB83V_5SCMCXdRu7WEJI55ATIg5WvvVdJCGZpRM3FEsy5j5LypuJKPW3yIhVnngPIUGsHdGOjVpugP_2JPQb8vGJbhgLpCbga1GQLhvm9pQwOS8kFqTXJls80KDS05xkw&sa=X&ved=2ahUKEwjr3-2DgZKKAxWwrVYBHSg7BzkQtKgLegQIGhAB&biw=360&bih=714&dpr=2#vhid=LuSn47JpV7Ft3M&vssid=mosaic">Look at this!!</a>
-        <img id="img" src="https://i.ibb.co/ftszfMQ/balde.jpg">
-        
-            <script>
-            const img = document.getElementById('img');
-const button =document.getElementById('button');
-
-
-button.addEventListener("click", event => {
-    if(img.style.display === "none")
-    {
-        img.style.display = "block";
-    }
-    else
-    {
-        img.style.display = "none";
-    }
-})
-        </script>
+        <center>
+            <form id="myForm" action="main.html" method="GET" onsubmit="return validateForm()">
+                 <div id="container">
+                     <h1>Login</h1>                
+                     <input type="text" id="Username" placeholder="Username" required>
+                     <br>
+                     <br>
+                     <input type="password" id="Password" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required>
+                    <p>Password must contain 8Char and uper and lowercase</p>
+                     
+                     <button id="Submit">Submit</button>
+                    
+                 </div>
+            </form>
+        </center>
+        <script>
+            alert("Welcome")
+         function validateForm() {
+          var form = document.getElementById("myForm");
+          if (form.checkValidity())
+          { 
+           return true; 
+           }
+            else 
+            { 
+             return false;
+             } 
+            } 
+             </script>
     </body>
 </html>
