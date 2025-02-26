@@ -1,60 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title> Page ni balderamosh </title>
-    </head>
     <body>
-        <style>
-            body {
-                background-color: #69f16b;
-            }
-            .form {
-                padding: 200px 0;
-            }
-            .form > div {
-                border: 3px ;
-                background-color:white;
-                padding-top:4px;
-                width: 10cm;
-                height: 6.5cm;
-                backdrop-filter: blur(8px);
-            }
-            button[type="button"]{
-                background-color: #33ed35;
-                color: white;
-            }
-            p {
-                font-family: Garamond;
-            }
-        </style>
-        <center>
-            <form id="myForm" action="main.html" method="GET" onsubmit="return validateForm()">
-                 <div id="container">
-                     <h1>Login</h1>                
-                     <input type="text" id="Username" placeholder="Username" required>
-                     <br>
-                     <br>
-                     <input type="password" id="Password" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required>
-                    <p>Password must contain 8Char and uper and lowercase</p>
-                     
-                     <button id="Submit">Submit</button>
-                    
-                 </div>
-            </form>
-        </center>
-        <script>
-            alert("Welcome")
-         function validateForm() {
-          var form = document.getElementById("myForm");
-          if (form.checkValidity())
-          { 
-           return true; 
-           }
-            else 
-            { 
-             return false;
-             } 
-            } 
-             </script>
-    </body>
+    <div class="carousel" >
+      <div class="cards">
+        <img src="omg.jpg">
+        <img src="uss.jpg">
+        <img src="sml.jpg">
+      </div>
+    </div>
+        </body>
+        <link rel="stylesheet" href="Webside/style.css">
+        <script src="script.js"></script>
 </html>
