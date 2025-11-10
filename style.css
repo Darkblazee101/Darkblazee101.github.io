@@ -139,6 +139,8 @@ img:hover {
     .img {
         box-shadow: 1px 1px 5px 5px;
         border: none;
+        width: 200px;
+        height: 290px;
     }
     .text {
         width: 320px;
@@ -183,4 +185,5 @@ img:hover {
     border: solid;
     height: 700px;
 }
+
 
